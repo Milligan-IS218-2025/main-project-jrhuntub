@@ -3,7 +3,7 @@
 html{
     background-color: gray;
     color: black;
-    text-align: center;
+    text-align: left;
 }
 
 a{
@@ -17,6 +17,7 @@ body{
 }
 
 header{
+    text-align: center;
     top: 0;
     left: 0;
     right: 0;
@@ -40,20 +41,11 @@ ul {
 
 aside{
     position: fixed;
+    right: 0;
     top: 75px;
-    width: 250px;
-    height: 100vh;
-    background-color: blue;
+}
+
+aside img{
     border: solid;
     border-color: black;
-    color: white;
-    padding: 20px;
-}
-
-aside.left{
-    left: 0;
-}
-
-aside.right{
-    right: 0;
 }
