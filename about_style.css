@@ -35,13 +35,14 @@ div.grid-container {
     grid-template-columns: auto 1fr minmax(100px, 300px);
     grid-template-rows: auto auto;
     gap: 20px;
-    height: 80vh;
+    height: auto;
 }
 
 div.item1 {
     grid-column: 1;
     grid-row: 1;
 
+    height:45vh ;
     padding-top: 0px;
     padding-left: 2%;
     padding-right: 2%;
@@ -133,6 +134,7 @@ aside {
     position: fixed;
     right: 15%;
     top: 75px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 aside img {
