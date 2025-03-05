@@ -26,14 +26,101 @@ a:hover {
 body {
     margin-top: 4%;
     padding-top: 1%;
-    background-color: #343434c1;
-    box-shadow: 10px 0 50px rgb(51, 51, 51);
+    background-color: rgba(50, 50, 50, 0.727);
+    height: auto;
 
     ul.links li {
         display: inline;
         padding-right: 5px;
         padding-left: 8px;
     }
+}
+
+/*OKC-Links*/
+div.OKC-links {
+    overflow: hidden;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+div.OKC-links a {
+    float: center;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.dropdown {
+    float: center;
+    overflow: hidden;
+}
+
+button.dropbtn {
+    position: sticky;
+    font-size: x-large;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+}
+
+div.OKC-links a:hover,
+div.dropdown:hover button.dropbtn {
+    background-color: hsl(212, 100%, 19%);
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 285px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+div.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+div.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+div.dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+}
+
+/*Recent News*/
+div.Recent-News {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+div.Recent-News img {
+    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.727);
+}
+
+div.Recent-News p {
+    max-width: 500px;
+    font-size: large;
+    background-color: rgba(50, 50, 50, 0.727);
 }
 
 /*Lists*/
@@ -84,72 +171,32 @@ header ul {
     }
 }
 
-/*Aside columns*/
-aside {
-    position: fixed;
-    top: 7.3%;
-    width: 15%;
-    height: 100vh;
-    background-color: rgb(86, 85, 85);
-    border: solid black;
-    color: white;
-    padding: 20px;
+/*Table*/
+table {
+    margin-left: 34%;
+    background-color: black;
 }
 
-aside p {
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: large;
+table th,
+table td,
+table caption {
+    width: auto;
+    padding: 15px;
+    background-color: hsl(212, 100%, 19%);
 }
 
-aside p.attributes {
-    font-weight: normal;
+table caption {
+    background-color: #575757;
 }
 
-aside p.title {
-    font-family: Impact;
-    font-weight: normal;
-    font-size: x-large;
-    text-decoration: underline;
-    text-decoration-color: hsl(17, 85%, 56%);
-}
-
-aside.left {
-    left: 0;
-}
-
-aside.right {
-    right: 0;
+table.caption {
+    padding-left: 95%;
 }
 
 /*Footer*/
 footer {
-    padding-top: 1%;
+    padding-left: 30%;
+    position: fixed;
+    bottom: 1%;
+    text-align: center;
 }
-
-/*
-<aside class="left">
-            <img src="oklahoma-city-thunder-logo.png" alt="OKC Logo" width="100" height="60"> <br>
-            <p class="title">All Star Starters</p>
-            <img src="shai.png" alt="Shai Gilgeous-Alexander" width="90%" height="23%">
-            <p>Shai Gilgeous-Alexander</p> <br>
-            <p class="title">PPG</p> 
-            <p class="attributes">32.5</p> <br>
-            <p class="title">APG</p>
-            <p class="attributes">6</p> <br>
-            <p class="title">RPG</p>
-            <p class="attributes">5.2</p> <br>
-        </aside>
-
-        <aside class="right">
-            <img src="oklahoma-city-thunder-logo.png" alt="OKC Logo" width="100" height="60"> <br>
-            <p class="title">All Star Reserves</p>
-            <img src="jalen williams.png" alt="Jalen Williams" width="105%" height="23%">
-            <p>Jalen Williams</p> <br>
-            <p class="title">PPG</p> 
-            <p class="attributes">32.5</p> <br>
-            <p class="title">APG</p>
-            <p class="attributes">6</p> <br>
-            <p class="title">RPG</p>
-            <p class="attributes">5.2</p> <br>
-        </aside>
