@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* Responsive Design*/
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
+/* OKC Links */
+@media screen and (max-width: 768px) {
+    .OKC-links {
+        margin-top: 70px;
+    }
+}
+
+/* Adjust dropdown menu for small screens */
+@media screen and (max-width: 600px) {
+    .dropdown-content {
+        min-width: 100%;
+        position: relative;
+    }
+}
+
+/* Table */
+@media screen and (max-width: 768px) {
+    .schedule th:nth-child(4), .schedule td:nth-child(4),
+    .standings th:nth-child(4), .standings td:nth-child(4) {
+        display: none;
+    }
+    
+    .schedule th, .schedule td,
+    .standings th, .standings td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Adjust roster container for mobile */
+@media screen and (max-width: 1024px) {
+    .roster-container div {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .roster-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .roster-container div {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+/* Ensure project page text scales well */
+@media screen and (max-width: 768px) {
+    .project {
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+    }
+}

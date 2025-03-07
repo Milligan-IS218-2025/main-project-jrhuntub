@@ -49,7 +49,7 @@ div.item1 {
     padding-left: 2%;
     padding-right: 2%;
 
-    background-color: hsl(212, 100%, 19%);
+    background: linear-gradient(to top right, black, hsl(212, 100%, 19%));
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
 
     font-size: large;
@@ -72,7 +72,7 @@ div.item2 {
     font-size: 20px;
     font-family: Helvetica;
 
-    background-color: hsl(212, 100%, 19%);
+    background: linear-gradient(to top right, black, hsl(212, 100%, 19%));
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
 
     h2 {
