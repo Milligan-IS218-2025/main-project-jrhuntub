@@ -7,7 +7,7 @@ html {
     background-size: cover;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 /*Overall Links*/
@@ -27,7 +27,7 @@ body {
     margin-top: 4%;
     padding-top: 1%;
     background-color: rgba(50, 50, 50, 0.727);
-    height: auto;
+    height: 100%;
 
     ul.links li {
         display: inline;
@@ -58,7 +58,6 @@ div.dropdown {
 }
 
 button.dropbtn {
-    position: sticky;
     font-size: x-large;
     border: none;
     outline: none;
@@ -120,7 +119,8 @@ div.Recent-News img {
 div.Recent-News p {
     max-width: 500px;
     font-size: large;
-    background-color: rgba(50, 50, 50, 0.727);
+    background-color: hsl(212, 100%, 19%);
+    border: 3px solid black;
 }
 
 /*Lists*/
@@ -173,30 +173,86 @@ header ul {
 
 /*Table*/
 table {
-    margin-left: 34%;
-    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
 }
 
 table th,
-table td,
-table caption {
+table td {
     width: auto;
     padding: 15px;
     background-color: hsl(212, 100%, 19%);
+    border: 2px solid black;
+    min-width: 250px;
+}
+
+table th {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 }
 
 table caption {
-    background-color: #575757;
+    font-size: large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-table.caption {
-    padding-left: 95%;
+/*About Project Page*/
+div.project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: Helvetica;
+    margin: auto auto;
+    min-height: 80vh;
+}
+
+div.project p {
+    padding: 2% 2%;
+    background-color: hsl(212, 100%, 19%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
+}
+
+/*Roster Grid*/
+div.roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+div.roster-container img {
+    width: 200px;
+    height: 200px;
+}
+
+div.roster-container div {
+    min-width: 150px;
+    height: auto;
+    flex: 1 1 calc(33.33% - 10px);
+    background-color: hsl(212, 100%, 19%);
+}
+
+.shai {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 /*Footer*/
 footer {
-    padding-left: 30%;
-    position: fixed;
     bottom: 1%;
+    padding-top: 2%;
     text-align: center;
 }
