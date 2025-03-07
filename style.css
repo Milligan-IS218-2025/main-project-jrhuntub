@@ -2,7 +2,7 @@
 
 /*Overall*/
 html {
-    background-image: url(okc\ arena.jpg);
+    background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/crm/oklahoma/17.04.21_R1G3_Zach-Beeker_Proof_Edit_8BA2F321-841D-4FC3-BCD5D511B5F3C4F0_640d0788-07c0-42b8-b5ec02f4218b08f1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -19,7 +19,6 @@ a {
 a:hover {
     background-color: rgba(32, 32, 32, 0.726);
     border: 2px solid black;
-    border-radius: 5%;
 }
 
 /*Body Layout*/
@@ -222,33 +221,43 @@ div.project p {
     padding: 2% 2%;
     background-color: hsl(212, 100%, 19%);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 
 /*Roster Grid*/
 div.roster-container {
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    color: white;
-    text-shadow: 1px 1px black;
+    gap: 10px;
+}
+
+.roster {
+    font-size: large;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 
 div.roster-container img {
-    width: 200px;
-    height: 200px;
+    padding-top: 1%;
+    width: 325px;
+    height: 250px;
 }
 
 div.roster-container div {
-    min-width: 150px;
+    min-width: 100px;
     height: auto;
-    flex: 1 1 calc(33.33% - 10px);
+    flex: 1 1 calc(25.00% - 10px);
     background-color: hsl(212, 100%, 19%);
+    border: 5px solid black;
 }
 
-.shai {
-    grid-column: 1;
-    grid-row: 1;
+div.roster-container div p{
+    text-shadow: 1px 1px black;
+    font-weight: bold;
 }
+
 
 /*Footer*/
 footer {

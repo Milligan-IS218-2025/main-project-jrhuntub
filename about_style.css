@@ -50,7 +50,7 @@ div.item1 {
     padding-right: 2%;
 
     background-color: hsl(212, 100%, 19%);
-    box-shadow: 10px 0 50px rgb(51, 51, 51);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
 
     font-size: large;
     font-family: Helvetica;
@@ -73,7 +73,7 @@ div.item2 {
     font-family: Helvetica;
 
     background-color: hsl(212, 100%, 19%);
-    box-shadow: 10px 0 50px rgb(51, 51, 51);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
 
     h2 {
         font-size: 30px;
