@@ -156,3 +156,67 @@ footer {
     bottom: 1%;
     text-align: center;
 }
+
+/*Responsiveness*/
+
+/*Grid*/
+@media screen and (max-width: 768px) {
+    div.grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.item1 h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.item2 h2 {
+        font-size: 25px;
+    }
+}
+
+/*Header*/
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    header ul li {
+        padding: 5px 10px;
+    }
+}
+
+/*Aside*/
+@media screen and (max-width: 1000px) {
+    aside {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    aside img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/*Footer*/
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 0;
+        text-align: center;
+        position: relative;
+    }
+}

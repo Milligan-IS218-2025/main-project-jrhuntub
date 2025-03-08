@@ -266,7 +266,9 @@ div.roster-container div {
     min-width: 100px;
     max-width: 90%;
     height: auto;
-    flex: 1 1 calc(25% - 10px);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 10px);
     background-color: hsl(212, 100%, 19%);
     border: 5px solid black;
     display: flex;
@@ -275,7 +277,7 @@ div.roster-container div {
     text-align: center;
 }
 
-div.roster-container div p{
+div.roster-container div p {
     text-shadow: 1px 1px black;
     font-weight: bold;
 }
