@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* Responsive Design*/
+/*Responsive Design for all pages except about*/
 @media screen and (max-width: 768px) {
     header ul {
         flex-direction: row;
@@ -14,14 +14,14 @@
     }
 }
 
-/* OKC Links */
+/*OKC Links*/
 @media screen and (max-width: 768px) {
     div.OKC-links {
         margin-top: 70px;
     }
 }
 
-/* Dropdown menu for small screens */
+/*Dropdown menu for small screens*/
 @media screen and (max-width: 600px) {
     div.dropdown-content {
         min-width: 100%;
@@ -29,7 +29,7 @@
     }
 }
 
-/* Table */
+/*Table*/
 @media screen and (max-width: 768px) {
 
     table.schedule th:nth-child(3),
@@ -48,7 +48,7 @@
     }
 }
 
-/* Adjust roster for mobile */
+/*Adjust roster for mobile*/
 @media screen and (max-width: 1024px) {
     div.roster-container div {
         flex-grow: 1;
@@ -69,7 +69,7 @@
     }
 }
 
-/* Scale Project Page text */
+/*Scale Project Page text*/
 @media screen and (max-width: 768px) {
     body.Abt-Project {
         padding: 10px;

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*Overall*/
+/*Overall base styling*/
 html {
     background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/crm/oklahoma/17.04.21_R1G3_Zach-Beeker_Proof_Edit_8BA2F321-841D-4FC3-BCD5D511B5F3C4F0_640d0788-07c0-42b8-b5ec02f4218b08f1.jpg);
     background-repeat: no-repeat;
@@ -46,9 +46,7 @@ div.OKC-links {
     align-items: center;
     margin-top: 40px;
     flex-wrap: nowrap;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
+    gap: 10px;;
 }
 
 div.OKC-links a {
@@ -108,7 +106,7 @@ div.dropdown:hover .dropdown-content {
     justify-content: center;
 }
 
-/*Recent News*/
+/*Recent News section*/
 div.Recent-News {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +128,7 @@ div.Recent-News p {
     border: 3px solid black;
 }
 
-/*Lists*/
+/*ul lists*/
 ul {
     padding: 0;
     display: inline-block;
@@ -179,7 +177,7 @@ header ul {
     }
 }
 
-/*Table*/
+/*Tables*/
 table {
     display: flex;
     flex-wrap: nowrap;
