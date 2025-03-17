@@ -46,7 +46,8 @@ div.OKC-links {
     align-items: center;
     margin-top: 40px;
     flex-wrap: nowrap;
-    gap: 10px;;
+    gap: 10px;
+    ;
 }
 
 div.OKC-links a {
