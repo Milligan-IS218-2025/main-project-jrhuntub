@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*Responsive Design for all pages except about*/
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
+/*OKC Links*/
+@media screen and (max-width: 768px) {
+    div.OKC-links {
+        margin-top: 70px;
+    }
+}
+
+/*Dropdown menu for small screens*/
+@media screen and (max-width: 600px) {
+    div.dropdown-content {
+        min-width: 100%;
+        position: relative;
+    }
+}
+
+/*Table*/
+@media screen and (max-width: 768px) {
+
+    table.schedule th:nth-child(3),
+    table.schedule td:nth-child(3),
+    table.standings th:nth-child(4),
+    table.standings td:nth-child(4) {
+        display: none;
+    }
+
+    table.schedule th,
+    table.schedule td,
+    table.standings th,
+    table.standings td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/*Adjust roster for mobile*/
+@media screen and (max-width: 1024px) {
+    div.roster-container div {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc(33.33% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.roster-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.roster-container div {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+/*Scale Project Page text*/
+@media screen and (max-width: 768px) {
+    body.Abt-Project {
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+    }
+}
