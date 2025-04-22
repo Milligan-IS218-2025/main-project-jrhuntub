@@ -5,16 +5,9 @@ html {
     background-color: gray;
     color: black;
     text-align: left;
-    font-family: Arial;
 }
 
-/*Links*/
-a {
-    color: white;
-    text-decoration: none;
-}
-
-p.Track-Link {
+p.track-link {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-decoration-color: white;
@@ -22,10 +15,7 @@ p.Track-Link {
 
 /*Body*/
 body {
-    margin-top: 4%;
     padding-right: 25%;
-    padding-top: 1%;
-    text-align: center;
 }
 
 /*Grid*/
@@ -94,44 +84,13 @@ ul {
 
 /*Header*/
 header ul {
-    list-style-type: none;
-    background-color: hsl(212, 100%, 19%);
-    position: fixed;
     margin-top: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 92.5%;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border: 3.5px solid black;
-    box-sizing: border-box;
     height: 7.5%;
-    font-size: x-large;
+    flex-wrap: wrap;
 
     li {
-        display: inline;
-        height: 100%;
-        font-weight: 700;
-    }
-
-    li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        padding: 0 16px;
-        text-decoration: none;
-        height: 100%;
-    }
-
-    li a:hover {
-        border: none;
-        background-color: #575757;
+        flex-shrink: 0;
     }
 }
 
@@ -153,8 +112,6 @@ aside img {
 footer {
     padding-left: 30%;
     position: fixed;
-    bottom: 1%;
-    text-align: center;
 }
 
 /*Responsiveness*/
@@ -168,22 +125,15 @@ footer {
         margin-left: 0;
         padding: 5%;
     }
-}
 
-@media screen and (max-width: 768px) {
     div.item1 h1 {
         font-size: 50px;
     }
-}
 
-@media screen and (max-width: 768px) {
     div.item2 h2 {
         font-size: 25px;
     }
-}
 
-/*Header*/
-@media screen and (max-width: 768px) {
     header ul {
         flex-wrap: wrap;
         padding: 10px 0;
@@ -191,6 +141,12 @@ footer {
 
     header ul li {
         padding: 5px 10px;
+    }
+
+    footer {
+        padding: 0;
+        text-align: center;
+        position: relative;
     }
 }
 
@@ -211,14 +167,5 @@ footer {
         height: auto;
         display: block;
         margin: 0 auto;
-    }
-}
-
-/*Footer*/
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 0;
-        text-align: center;
-        position: relative;
     }
 }

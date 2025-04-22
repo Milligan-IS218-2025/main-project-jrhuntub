@@ -1,32 +1,15 @@
 @charset "utf-8";
 
-/*Overall base styling*/
+/*Base styling*/
 html {
     background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/crm/oklahoma/17.04.21_R1G3_Zach-Beeker_Proof_Edit_8BA2F321-841D-4FC3-BCD5D511B5F3C4F0_640d0788-07c0-42b8-b5ec02f4218b08f1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    text-align: center;
-    font-family: Arial;
-    background-size: cover;
     background-position: center;
-}
-
-/*Overall Links*/
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: rgba(32, 32, 32, 0.726);
-    border: 2px solid black;
 }
 
 /*Body Layout*/
 body {
-    margin-top: 4%;
-    padding-top: 1%;
     background-color: rgba(50, 50, 50, 0.727);
     height: 100%;
 
@@ -38,7 +21,7 @@ body {
 }
 
 /*OKC-Links*/
-div.OKC-links {
+div.okc-links {
     overflow: hidden;
     font-size: large;
     display: flex;
@@ -50,7 +33,7 @@ div.OKC-links {
     ;
 }
 
-div.OKC-links a {
+div.okc-links a {
     float: center;
     font-size: 16px;
     text-align: center;
@@ -76,7 +59,7 @@ button.dropbtn {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 
-div.OKC-links a:hover,
+div.okc-links a:hover,
 div.dropdown:hover button.dropbtn {
     background-color: hsl(212, 100%, 19%);
 }
@@ -85,7 +68,7 @@ div.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 285px;
+    min-width: 308px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -95,6 +78,7 @@ div.dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    min-width: 69px;
     text-align: center;
 }
 
@@ -107,8 +91,12 @@ div.dropdown:hover .dropdown-content {
     justify-content: center;
 }
 
+span.arrow {
+    font-size: medium;
+}  
+
 /*Recent News section*/
-div.Recent-News {
+div.recent-news {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -118,11 +106,11 @@ div.Recent-News {
     padding-top: 20px;
 }
 
-div.Recent-News img {
+div.recent-news img {
     box-shadow: 10px 0 50px rgba(0, 0, 0, 0.727);
 }
 
-div.Recent-News p {
+div.recent-news p {
     max-width: 500px;
     font-size: large;
     background-color: hsl(212, 100%, 19%);
@@ -135,47 +123,6 @@ ul {
     display: inline-block;
     text-align: left;
     margin: 0 auto;
-}
-
-/*Header*/
-header ul {
-    list-style-type: none;
-    background-color: hsl(212, 100%, 19%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 92.5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border: 3.5px solid black;
-    box-sizing: border-box;
-    font-size: x-large;
-    flex-wrap: nowrap;
-
-    li {
-        display: inline;
-        height: 100%;
-        font-weight: 700;
-        flex-shrink: 1%;
-    }
-
-    li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        padding: 0 16px;
-        text-decoration: none;
-        height: 100%;
-    }
-
-    li a:hover {
-        border: none;
-        background-color: #575757;
-    }
 }
 
 /*Tables*/
@@ -279,12 +226,4 @@ div.roster-container div {
 div.roster-container div p {
     text-shadow: 1px 1px black;
     font-weight: bold;
-}
-
-
-/*Footer*/
-footer {
-    bottom: 1%;
-    padding-top: 2%;
-    text-align: center;
 }
