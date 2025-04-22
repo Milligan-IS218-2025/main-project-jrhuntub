@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*Roster Page Styles*/
+
+/*Container for Players*/
+section.roster-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.roster {
+    font-size: large;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+}
+
+section.roster-container img {
+    padding-top: 1%;
+    width: 325px;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+section.roster-container figure {
+    min-width: 100px;
+    max-width: 90%;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 10px);
+    background-color: hsl(212, 100%, 19%);
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.roster-container figure figcaption {
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}

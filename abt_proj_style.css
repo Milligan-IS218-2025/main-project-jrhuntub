@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*About Project Page*/
+
+article.project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: Helvetica;
+    margin: auto auto;
+    min-height: 80vh;
+}
+
+article.project p {
+    padding: 2% 2%;
+    background-color: hsl(212, 100%, 19%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+}

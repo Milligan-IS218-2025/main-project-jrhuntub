@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*Tables*/
+
+table {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    width: auto;
+    padding: 15px;
+    background-color: hsl(212, 100%, 19%);
+    border: 2px solid black;
+    min-width: 250px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+table th {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+table caption {
+    font-size: large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

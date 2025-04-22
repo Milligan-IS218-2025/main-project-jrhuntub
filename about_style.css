@@ -4,44 +4,82 @@
 html {
     background-color: gray;
     color: black;
-    text-align: left;
+    font-family: Arial;
 }
 
-p.track-link {
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-decoration-color: white;
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Header*/
+ul.header {
+    list-style-type: none;
+    background-color: hsl(212, 100%, 19%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 92.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 3.5px solid black;
+    box-sizing: border-box;
+    font-size: x-large;
+    flex-wrap: nowrap;
+
+    li {
+        display: inline;
+        height: 100%;
+        font-weight: 700;
+        flex-shrink: 1%;
+    }
+
+    li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+        height: 100%;
+    }
+
+    li a:hover {
+        border: none;
+        background-color: #575757;
+    }
 }
 
 /*Body*/
 body {
     padding-right: 25%;
+    margin-top: 4%;
+    padding-top: 1%;
+    text-align: center;
 }
 
 /*Grid*/
-div.grid-container {
+section.grid-container {
     margin-left: 10%;
     display: grid;
     grid-template-columns: auto 1fr minmax(100px, 300px);
     grid-template-rows: auto auto;
     gap: 20px;
-    height: auto;
     color: white;
     text-shadow: 1px 1px black;
 }
 
-div.item1 {
+article.item1 {
     grid-column: 1;
     grid-row: 1;
-
     height: 45vh;
-    padding-top: 0px;
     padding-left: 2%;
     padding-right: 2%;
-
     background: linear-gradient(to top right, black, hsl(212, 100%, 19%));
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
-
     font-size: large;
     font-family: Helvetica;
 
@@ -52,16 +90,13 @@ div.item1 {
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
-
 }
 
-div.item2 {
+aside.item2 {
     grid-column: 1;
     grid-row: 2;
-
     font-size: 20px;
     font-family: Helvetica;
-
     background: linear-gradient(to top right, black, hsl(212, 100%, 19%));
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.612);
 
@@ -95,30 +130,38 @@ header ul {
 }
 
 /*Aside*/
-aside {
+aside.my-pic {
     position: fixed;
     right: 15%;
     top: 75px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-aside img {
+aside.my-pic img {
     border: solid;
     border-color: black;
     box-shadow: 10px 0 50px rgb(51, 51, 51);
 }
 
+p.track-link {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 /*Footer*/
 footer {
+    bottom: 1%;
+    text-align: center;
+    padding-top: 2%;
     padding-left: 30%;
     position: fixed;
+    color: white;
 }
 
 /*Responsiveness*/
-
-/*Grid*/
 @media screen and (max-width: 768px) {
-    div.grid-container {
+    section.grid-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -126,11 +169,11 @@ footer {
         padding: 5%;
     }
 
-    div.item1 h1 {
+    article.item1 h1 {
         font-size: 50px;
     }
 
-    div.item2 h2 {
+    aside.item2 h2 {
         font-size: 25px;
     }
 
@@ -150,7 +193,6 @@ footer {
     }
 }
 
-/*Aside*/
 @media screen and (max-width: 1000px) {
     aside {
         position: relative;
