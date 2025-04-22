@@ -5,11 +5,12 @@
 section.roster-container {
     padding-left: 5%;
     padding-right: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
+
 
 .roster {
     font-size: large;
@@ -18,7 +19,7 @@ section.roster-container {
 }
 
 section.roster-container img {
-    padding-top: 1%;
+    padding: 2%;
     width: 325px;
     max-width: 90%;
     height: auto;
@@ -43,4 +44,5 @@ section.roster-container figure {
 section.roster-container figure figcaption {
     text-shadow: 1px 1px black;
     font-weight: bold;
+    padding: 2%;
 }
