@@ -11,6 +11,7 @@ html {
     background-position: center;
 }
 
+/*Links*/
 a {
     color: white;
     text-decoration: none;
@@ -21,6 +22,7 @@ a:hover {
     border: 2px solid black;
 }
 
+/*Body*/
 body {
     margin-top: 4%;
     padding-top: 1%;
@@ -29,13 +31,7 @@ body {
     height: 100%;
 }
 
-ul.links li {
-    display: inline;
-    padding-right: 5px;
-    padding-left: 8px;
-}
-
-/* Header */
+/*Header*/
 ul.header {
     list-style-type: none;
     background-color: hsl(212, 100%, 19%);
@@ -78,7 +74,7 @@ ul.header li a:hover {
     background-color: hsl(212, 97%, 15%);
 }
 
-/* OKC Links */
+/*OKC Links*/
 nav.okc-links {
     overflow: hidden;
     font-size: large;
@@ -152,7 +148,7 @@ span.arrow {
     font-size: medium;
 }
 
-/* ul lists */
+/*ul Lists*/
 ul {
     padding: 0;
     display: inline-block;
@@ -160,7 +156,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Footer */
+/*Footer*/
 footer {
     bottom: 1%;
     text-align: center;

@@ -1,11 +1,12 @@
 // JavaScript for Form
 
+//Waiting for submit button on form to be pressed
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("subscribe-form");
     const container = document.getElementById("form-container");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
+        e.preventDefault(); //Keep from refreshing the page
 
         // Fade out form
         form.classList.add("fade-out");

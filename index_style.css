@@ -75,6 +75,7 @@ form button:hover {
     background: #005fa2;
 }
 
+/*Form Transition/Animation*/
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-out;
