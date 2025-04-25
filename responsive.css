@@ -21,17 +21,13 @@
     }
 
     /*Tables*/
-    table.schedule th:nth-child(3),
-    table.schedule td:nth-child(3),
-    table.standings th:nth-child(4),
-    table.standings td:nth-child(4) {
+    table th:nth-child(3),
+    table td:nth-child(3) {
         display: none;
     }
-
-    table.schedule th,
-    table.schedule td,
-    table.standings th,
-    table.standings td {
+    
+    table th,
+    table td {
         font-size: 14px;
         padding: 8px;
     }
