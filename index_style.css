@@ -44,7 +44,7 @@ figure.recent-news figcaption {
     font-size: large;
 }
 
-#form-container h2 {
+form h2 {
     color: white;
     text-shadow: 2px 2px black;
     text-decoration: underline;
