@@ -57,7 +57,7 @@ ul.header {
 /*Body*/
 body {
     padding-right: 25%;
-    margin-top: 4%;
+    margin-top: 5%;
     padding-top: 1%;
     text-align: center;
 }
@@ -74,6 +74,7 @@ section.my-info {
 }
 
 article.item1 {
+    margin-top: 0;
     grid-column: 1;
     grid-row: 1;
     height: 45vh;
@@ -85,9 +86,10 @@ article.item1 {
     font-family: Helvetica;
 
     h1 {
+        margin-bottom: 0;
+        margin-top: 9%;
         font-size: 90px;
         font-family: Arial;
-        margin-bottom: 0;
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
@@ -134,7 +136,7 @@ header ul {
 aside.my-pic {
     position: fixed;
     right: 15%;
-    top: 75px;
+    top: 11%
 }
 
 aside.my-pic img {
@@ -161,48 +163,78 @@ footer {
 }
 
 /*Responsiveness*/
-@media screen and (max-width: 600px) {
-    section.grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        padding: 5%;
-    }
+@media screen and (max-width: 894px) {
 
-    article.item1 h1 {
-        font-size: 30px;
-    }
-
-    aside.item2 h2 {
-        font-size: 25px;
-    }
-
-    header ul {
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-
-    header ul li {
-        padding: 5px 10px;
-    }
-
-    footer {
-        padding: 0;
-        text-align: center;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 1000px) {
     aside {
-        position: fixed;
+        position: relative;
         right: auto;
         top: auto;
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
+        max-height: 500px;
         margin-top: 20px;
         text-align: center;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    article.item1 {
+        height: 250px;
+        padding-bottom: 0;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: small
+        }
+
+        p.track-info {
+            display: none;
+        }
+    }
+
+    aside.my-pic {
+        right: 8%;
+        width: 250px;
+        height: 400px;
+    }
+
+    aside img {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    aside {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: 100%;
+        max-width: 350px;
+        max-height: 500px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    article.item1 {
+        max-height: 300px;
+        padding-bottom: 0;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 15px;
+        }
     }
 
     aside img {
