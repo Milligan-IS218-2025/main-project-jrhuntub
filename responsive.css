@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*Responsive Design for all pages except about*/
+
+@media screen and (max-width: 768px) {
+
+    /*Header*/
+    header ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul li {
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+    /*OKC Links*/
+    div.OKC-links {
+        margin-top: 70px;
+    }
+
+    /*Tables*/
+    table th:nth-child(3),
+    table td:nth-child(3) {
+        display: none;
+    }
+    
+    table th,
+    table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /*Roster*/
+    div.roster-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.roster-container div {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+
+    /*About Project Page*/
+    body.Abt-Project {
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+    }
+}
+
+/*Dropdown menu for small screens*/
+@media screen and (max-width: 600px) {
+    div.dropdown-content {
+        min-width: 100%;
+        position: relative;
+    }
+}
+
+/*Adjust roster for mobile*/
+@media screen and (max-width: 1024px) {
+    div.roster-container div {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc(33.33% - 10px);
+    }
+}

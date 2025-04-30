@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*Index Page Styles*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Recent News section*/
+figure.recent-news {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+figure.recent-news img {
+    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.727);
+}
+
+figure.recent-news figcaption {
+    margin-top: 1%;
+    padding: 10px 10px;
+    max-width: 500px;
+    font-size: large;
+    background-color: hsl(212, 100%, 19%);
+    border: 3px solid black;
+}
+
+/*Form*/
+#form-container {
+    background: hsl(212, 100%, 19%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    font-size: large;
+}
+
+form h2 {
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #0077cc;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #005fa2;
+}
+
+/*Form Transition/Animation*/
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
